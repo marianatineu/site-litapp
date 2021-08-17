@@ -1,0 +1,189 @@
+$fonte-principal :'Mulish', sans-serif;
+$cor-da-borda :rgb(92, 232, 241) solid 7px;
+
+.container {
+    border-top: $cor-da-borda;
+    background: url('img/bg-home-novo-3.jpg');
+    background-size: 100%;
+    height: 365px;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.cabecalho-principal-titulo {
+    font-family: $fonte-principal;
+    font-size: 38px;
+    margin-left: 6%;
+    margin-top: 5px;
+    color: rgb(11, 12, 12);
+    -webkit-text-stroke-width: 0.5px; /* largura da borda do texto */
+    -webkit-text-stroke-color: #000; /* cor da borda do texto */
+}
+
+.menu-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-links {
+    text-decoration-line: none;
+    font-size: 25px;
+    font-family: $fonte-principal;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 40px;
+}
+
+.cabecalho-principal-nav a:hover {
+    -webkit-text-stroke-color: rgb(10, 10, 10);
+    -webkit-text-stroke-width: 0.5px;
+}
+
+.sobre-nos {
+    padding: 30px;
+    background-color: rgb(251, 252, 246);
+}
+
+.sobre-nos-titulo {
+    font-size: 22px;
+    font-family: $fonte-principal;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+}
+
+.sobre-nos-paragrafo {
+    font-family: $fonte-principal;
+    line-height: 2.0;
+    font-size: 16px;
+    margin: 5px 20px;
+    border-top: $cor-da-borda;
+}
+
+.main-babyecho {
+    padding-top: 20px;
+    background: url(img/ceu-estrelado.jpg);
+    font-family: $fonte-principal;
+    text-align: center;
+    border-bottom: $cor-da-borda;
+}
+
+.img-background {
+    width: 100%;
+}
+
+.baby-echo {
+    justify-content: space-between;
+}
+
+.titulo-principal {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.babyecho-user {
+    width: 45%;
+    margin: 10px;
+}
+
+.babyecho-parents {
+    width: 47%;
+    margin: 10px;
+}
+
+.babyecho-txt {
+    font-size: 20px;
+    text-align: justify;
+    margin: 5% ;
+    color: white;
+    padding-bottom: 10%;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 5%;
+}
+
+.playstore {
+    width: 15%;
+}
+
+.footer {
+    text-align: center;
+    font-family: $fonte-principal;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.footer-img {
+    max-width: 80px;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: auto;
+        background-size: cover;
+        height: 270px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .menu-list {
+        justify-content: space-evenly;
+    }
+
+    .menu-links {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .sobre-nos {
+        padding: 20px;
+    }
+    .sobre-nos-paragrafo {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px;
+    }
+
+    .baby-echo{
+        flex-direction: column;
+    }
+
+    .babyecho-user {
+        width: 80%; 
+    }
+
+    .babyecho-parents {
+        width: 80%;
+    }
+
+    .babyecho-txt {
+        font-size: 17px;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    .footer-img {
+        text-align: center;
+    }
+
+    .playstore {
+        width: 20%;
+    }
+}
+
